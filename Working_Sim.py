@@ -159,6 +159,6 @@ num_antennas = 20  # Number of antennas
 for i in range(num_antennas):
     x_position = i * optimal_spacing - (num_antennas - 1) * optimal_spacing / 2  # Centered array
     print(x_position)
-    add_antenna(x_position, 0)  # All antennas placed along the x-axis
+    add_antenna(x_position, 0)  # All antennas placed along the x-axis add_antannea(x,y)
 
 plt.show()
