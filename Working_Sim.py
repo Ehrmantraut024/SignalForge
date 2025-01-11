@@ -6,7 +6,7 @@ from matplotlib.widgets import Slider
 positions = []  # List to hold antenna positions (x, y)
 wavelength = 1.0  # Normalized wavelength
 angles = np.linspace(-np.pi / 2, np.pi / 2, 360)  # Beam angles (in radians)
-
+ 
 def add_antenna(x, y):
     """Add an antenna at position (x, y)."""
     global positions
@@ -158,6 +158,7 @@ optimal_spacing = wavelength / 2  # Half-wavelength is the optimal spacing
 num_antennas = 20  # Number of antennas
 for i in range(num_antennas):
     x_position = i * optimal_spacing - (num_antennas - 1) * optimal_spacing / 2  # Centered array
+    print(x_position)
     add_antenna(x_position, 0)  # All antennas placed along the x-axis
 
 plt.show()
