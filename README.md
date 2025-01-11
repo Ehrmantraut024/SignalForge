@@ -19,9 +19,11 @@ There are two files:
 - Matplotlib
 
 ## Installation
-1. Clone the repository and install resources:
+1. Clone the repository:
    ```bash
    git clone https://github.com/TheTheoM/SignalForge
-   cd SignalForge
+   ```
+2. Install resources:
+   ```bash
    pip install numpy matplotlib
-    ``
+    ```
